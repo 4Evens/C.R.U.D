@@ -65,8 +65,10 @@
   <ItemGroup>
     <Compile Include="Abstrack\ICategoryService.cs" />
     <Compile Include="Abstrack\IProductService.cs" />
+    <Compile Include="Abstrack\IUserService.cs" />
     <Compile Include="Concrete\CategoryManager.cs" />
     <Compile Include="Concrete\ProductManager.cs" />
+    <Compile Include="Concrete\UserManager.cs" />
     <Compile Include="DependencyResolvers\Ninject\BusinessModule.cs" />
     <Compile Include="DependencyResolvers\Ninject\InstanceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

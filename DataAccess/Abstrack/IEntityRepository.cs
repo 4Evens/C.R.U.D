@@ -16,5 +16,6 @@ namespace DataAccess.Abstrack
         void Add(T entity);
         void Update(T entity);
         void Delete(T entity);
+        bool IsExist(Expression<Func<T, bool>> filter = null);
     }
 }

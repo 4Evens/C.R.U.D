@@ -34,6 +34,15 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+        public bool IsExist(Expression<Func<TEntity, bool>> filter = null)
+        {
+            using (TContext context = new TContext())
+            {
+                return context.Set<TEntity>().Where(filter).Any();
+
+            }
+        }
+
         public TEntity Get(Expression<Func<TEntity, bool>> filter)
         {
             using (TContext context = new TContext())
